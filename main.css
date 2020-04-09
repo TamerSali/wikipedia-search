@@ -1,0 +1,66 @@
+body {
+  background: url("https://fuselabcreative.com/wp-content/uploads/2018/02/connections.gif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 25%;
+}
+
+.form-control {
+  outline: none !important;
+  background: none !important;
+  color: white !important;
+}
+.form-control:focus {
+  background: rgb(3, 0, 0, 0.5) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+.resultItem {
+  opacity: 0;
+  background: rgb(3, 0, 0, 0.5) !important;
+  margin-bottom: 20px;
+  animation: show 0.5s forwards ease-in-out;
+  border: 1px solid #8700ff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.resultItem:hover {
+  background-color: rgb(3, 0, 0, 0.8) !important;
+}
+.resultItem:hover .resultItem-title {
+  color: #cd853f;
+}
+.resultItem:hover .resultItem-snippet {
+  color: white;
+}
+
+.resultItem-title {
+  margin-bottom: 4px;
+}
+
+.resultItem-snippet,
+.resultItem-link {
+  color: #c2c2c2;
+  font-size: 13px;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

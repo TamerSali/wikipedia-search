@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wikipedia Search</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="row d-flex align-items-center justify-content-center mt-5 pt-5"
+      >
+        <div class="col-md-8 col-12 text-center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png"
+            alt="Wikipedia Logo"
+          />
+          <form class="searchForm form-group">
+            <div class="row mt-4">
+              <div class="col-12">
+                <input type="search" class="form-control search-input" />
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-6 text-right">
+                <button type="submit" class="btn btn-light">
+                  Search
+                  <i class="fal fa-search"></i>
+                </button>
+              </div>
+              <div class="col-6 text-left">
+                <a
+                  href="https://en.wikipedia.org/wiki/Special:Random"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-info"
+                  >Random
+                  <i class="fad fa-random"></i>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-7 col-12">
+          <div class="searchResults mt-5"></div>
+        </div>
+      </div>
+      <div
+        class="row d-flex align-items-center justify-content-center text-center text-light"
+      >
+        <div class="col-12">
+          By Tamer Sali &copy;
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/19f2c5d14c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
